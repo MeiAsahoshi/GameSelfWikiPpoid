@@ -1,0 +1,18 @@
+{
+  "champions": [
+    { "name": "Ahri", "image": "/images/ahri.png" },
+    { "name": "Zed", "image": "/images/zed.png" }
+  ],
+  "counters": [
+    {
+      "my": "Ahri",
+      "enemy": "Zed",
+      "content": "Ahri vs Zed の対策記事です。Qスキルを避けつつ、ウルトで距離をとると有利です。"
+    },
+    {
+      "my": "Zed",
+      "enemy": "Ahri",
+      "content": "Zed vs Ahri の対策記事です。ミニオンの間合いでスキルを使い分けると優位になります。"
+    }
+  ]
+}
