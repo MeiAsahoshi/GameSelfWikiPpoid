@@ -1,0 +1,9 @@
+export const lolCounters = {
+  Ahri: {
+    Zed: "Zed に対する対策記事",
+    Yasuo: "Yasuo に対する対策記事",
+  },
+  Zed: {
+    Ahri: "Ahri に対する対策記事",
+  },
+};

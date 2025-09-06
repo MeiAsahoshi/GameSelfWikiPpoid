@@ -1,11 +1,14 @@
-import { useRouter } from "next/router";
+"use client";
+
+import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-import { supabase } from "../../../lib/supabaseClient";
+// 相対パスに変更
+import { supabase } from "../../../../lib/supabaseClient";
 
 export default function CounterPage() {
-  const router = useRouter();
-  const { my, enemy } = router.query as { my: string; enemy: string };
+  const params = useParams();
+  const { my, enemy } = params as { my: string; enemy: string };
   const [content, setContent] = useState<string>("読み込み中...");
   const [loading, setLoading] = useState(true);
 

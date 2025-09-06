@@ -1,16 +1,19 @@
 import Link from "next/link";
 
-export default function Home() {
+const champions = ["Ahri", "Zed", "Yasuo"];
+
+export default function LolPage() {
   return (
     <div className="p-10">
-      <h1 className="text-2xl font-bold mb-4">ゲームを選択</h1>
-      <ul className="space-y-2">
-        <li>
-          <Link href="/lol" className="text-blue-600 hover:underline">League of Legends</Link>
-        </li>
-        <li>
-          <Link href="/tekken" className="text-blue-600 hover:underline">鉄拳</Link>
-        </li>
+      <h1 className="text-2xl font-bold mb-4">自分のキャラクターを選択</h1>
+      <ul>
+        {champions.map((champ) => (
+          <li key={champ} className="mb-2">
+            <Link href={`/lol/${champ}/enemy`}>
+              {champ}
+            </Link>
+          </li>
+        ))}
       </ul>
     </div>
   );
